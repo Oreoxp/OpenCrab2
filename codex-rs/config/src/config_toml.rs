@@ -234,12 +234,12 @@ pub struct ConfigToml {
     #[serde(default)]
     pub history: Option<History>,
 
-    /// Directory where Codex stores the SQLite state DB.
-    /// Defaults to `$CODEX_SQLITE_HOME` when set. Otherwise uses `$CODEX_HOME`.
+    /// Directory where OpenCrab stores the SQLite state DB.
+    /// Defaults to `$OPENCRAB_SQLITE_HOME` when set. Otherwise uses `$OPENCRAB_HOME`.
     pub sqlite_home: Option<AbsolutePathBuf>,
 
-    /// Directory where Codex writes log files, for example `codex-tui.log`.
-    /// Defaults to `$CODEX_HOME/log`.
+    /// Directory where OpenCrab writes log files.
+    /// Defaults to `$OPENCRAB_HOME/log`.
     pub log_dir: Option<AbsolutePathBuf>,
 
     /// Optional URI-based file opener. If set, citations to files in the model

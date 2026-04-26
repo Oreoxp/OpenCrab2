@@ -1,0 +1,9 @@
+[package]
+name = "opencrab-branding"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Compile-time branding constants for OpenCrab3. Change values here to rebrand the entire project."
+
+[lints]
+workspace = true

@@ -954,7 +954,7 @@ async fn load_project_layers(
 
     let mut layers = Vec::new();
     for dir in dirs {
-        let dot_codex_abs = dir.join(".codex");
+        let dot_codex_abs = dir.join(opencrab_branding::PROJECT_CONFIG_DIR_NAME);
         if !fs
             .get_metadata(&dot_codex_abs, /*sandbox*/ None)
             .await

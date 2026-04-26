@@ -98,7 +98,7 @@ const MANAGED_MITM_CA_KEY: &str = "ca.key";
 
 fn managed_ca_paths() -> Result<(PathBuf, PathBuf)> {
     let codex_home =
-        find_codex_home().context("failed to resolve CODEX_HOME for managed MITM CA")?;
+        find_codex_home().context(format!("failed to resolve {} for managed MITM CA", opencrab_branding::HOME_ENV_VAR))?;
     let proxy_dir = codex_home.join(MANAGED_MITM_CA_DIR);
     Ok((
         proxy_dir.join(MANAGED_MITM_CA_CERT).to_path_buf(),

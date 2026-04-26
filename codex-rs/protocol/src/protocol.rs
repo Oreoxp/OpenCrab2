@@ -1296,11 +1296,11 @@ fn default_read_only_subpaths_for_writable_root(
         subpaths.push(top_level_agents);
     }
 
-    // Keep top-level project metadata under .codex read-only to the agent by
-    // default. For the workspace root itself, protect it even before the
-    // directory exists so first-time creation still goes through the
+    // Keep top-level project metadata under the project config dir read-only to
+    // the agent by default. For the workspace root itself, protect it even
+    // before the directory exists so first-time creation still goes through the
     // protected-path approval flow.
-    let top_level_codex = writable_root.join(".codex");
+    let top_level_codex = writable_root.join(opencrab_branding::PROJECT_CONFIG_DIR_NAME);
     if protect_missing_dot_codex || top_level_codex.as_path().is_dir() {
         subpaths.push(top_level_codex);
     }

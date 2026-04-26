@@ -1883,6 +1883,7 @@ dependencies = [
  "gethostname",
  "hmac",
  "jsonwebtoken",
+ "opencrab-branding",
  "opentelemetry",
  "opentelemetry_sdk",
  "owo-colors",
@@ -2417,6 +2418,7 @@ dependencies = [
  "maplit",
  "notify",
  "once_cell",
+ "opencrab-branding",
  "openssl-sys",
  "opentelemetry",
  "opentelemetry_sdk",
@@ -2789,6 +2791,7 @@ dependencies = [
  "globset",
  "landlock",
  "libc",
+ "opencrab-branding",
  "pkg-config",
  "pretty_assertions",
  "seccompiler",
@@ -2994,6 +2997,7 @@ dependencies = [
  "codex-utils-home-dir",
  "codex-utils-rustls-provider",
  "globset",
+ "opencrab-branding",
  "pretty_assertions",
  "rama-core",
  "rama-http",
@@ -3102,6 +3106,7 @@ dependencies = [
  "icu_locale_core",
  "icu_provider",
  "landlock",
+ "opencrab-branding",
  "pretty_assertions",
  "quick-xml",
  "reqwest",
@@ -3338,6 +3343,7 @@ dependencies = [
  "codex-protocol",
  "dirs",
  "log",
+ "opencrab-branding",
  "owo-colors",
  "pretty_assertions",
  "serde",
@@ -3375,6 +3381,7 @@ name = "codex-test-binary-support"
 version = "0.0.0"
 dependencies = [
  "codex-arg0",
+ "opencrab-branding",
  "tempfile",
 ]
 
@@ -3601,6 +3608,7 @@ version = "0.0.0"
 dependencies = [
  "codex-utils-absolute-path",
  "dirs",
+ "opencrab-branding",
  "pretty_assertions",
  "tempfile",
 ]
@@ -3767,6 +3775,7 @@ dependencies = [
  "dirs-next",
  "dunce",
  "glob",
+ "opencrab-branding",
  "pretty_assertions",
  "rand 0.8.5",
  "serde",
@@ -8938,6 +8947,10 @@ name = "opaque-debug"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08d65885ee38876c4f86fa503fb49d7b507c2b62552df7c70b2fce627e06381"
+
+[[package]]
+name = "opencrab-branding"
+version = "0.0.0"
 
 [[package]]
 name = "openssl"

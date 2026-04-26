@@ -64,6 +64,7 @@ codex-uds = { workspace = true }
 codex-utils-absolute-path = { workspace = true }
 codex-utils-json-to-toml = { workspace = true }
 codex-utils-rustls-provider = { workspace = true }
+opencrab-branding = { workspace = true }
 chrono = { workspace = true }
 clap = { workspace = true, features = ["derive"] }
 constant_time_eq = { workspace = true }

@@ -1,5 +1,6 @@
 [workspace]
 members = [
+    "branding",
     "aws-auth",
     "analytics",
     "agent-identity",
@@ -111,6 +112,7 @@ license = "Apache-2.0"
 
 [workspace.dependencies]
 # Internal
+opencrab-branding = { path = "branding" }
 app_test_support = { path = "app-server/tests/common" }
 codex-analytics = { path = "analytics" }
 codex-agent-identity = { path = "agent-identity" }

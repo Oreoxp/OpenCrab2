@@ -12,4 +12,5 @@ workspace = true
 
 [dependencies]
 codex-arg0 = { workspace = true }
+opencrab-branding = { workspace = true }
 tempfile = { workspace = true }
